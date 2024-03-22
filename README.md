@@ -8,8 +8,6 @@
    * [Components Architecture ](#components-architecture)
 
 
-<!-- TOC --><a name="arquitecturas"></a>
-## Architectures
 
 <!-- TOC --><a name="ddd-domain-driven-design-clean-architecture"></a>
 ### DDD Domain-Driven Design (Clean Architecture)
