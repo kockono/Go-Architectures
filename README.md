@@ -21,6 +21,7 @@
 ├── go.mod
 └── go.sum
 ```
+
 - **cmd**: Directorio que contiene la entrada principal del programa.
     - **myapp**: Directorio que representa la aplicación principal.
         - **main.go**: Archivo principal que inicia la aplicación.
