@@ -1,5 +1,12 @@
 ## Arquitecturas
 
+- [DDD Domain-Driven Design (Clean Architecture)](#ddd-domain-driven-design-clean-architecture)
+- [MVC Modelo-Vista-Controlador](#mvc-modelo-vista-controlador)
+- [Hexagonal Architecture](#hexagonal-architecture)
+- [Arquitectura de servicios](#arquitectura-de-servicios)
+- [Arquitectura de capas](#arquitectura-de-capas)
+- [Arquitectura de Componentes](#arquitectura-de-componentes)
+
 ### DDD Domain-Driven Design (Clean Architecture)
 ```go
 .
