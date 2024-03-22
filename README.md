@@ -1,12 +1,17 @@
-## Arquitecturas
+## Architectures
 
-- [DDD Domain-Driven Design (Clean Architecture)](#ddd-domain-driven-design-clean-architecture)
-- [MVC Modelo-Vista-Controlador](#mvc-modelo-vista-controlador)
-- [Hexagonal Architecture](#hexagonal-architecture)
-- [Services Architecture](#arquitectura-de-servicios)
-- [Capas Architecture](#arquitectura-de-capas)
-- [Componentes Architecture](#arquitectura-de-componentes)
+   * [DDD Domain-Driven Design (Clean Architecture)](#ddd-domain-driven-design-clean-architecture)
+   * [MVC Modelo-Vista-Controlador](#mvc-modelo-vista-controlador)
+   * [Hexagonal Architecture](#hexagonal-architecture)
+   * [Services Architecture](#services-architecture)
+   * [Layers Architecture](#layers-architecture)
+   * [Components Architecture ](#components-architecture)
 
+
+<!-- TOC --><a name="arquitecturas"></a>
+## Architectures
+
+<!-- TOC --><a name="ddd-domain-driven-design-clean-architecture"></a>
 ### DDD Domain-Driven Design (Clean Architecture)
 ```go
 .
@@ -28,7 +33,6 @@
 ├── go.mod
 └── go.sum
 ```
-
 - **cmd**: Directorio que contiene la entrada principal del programa.
     - **myapp**: Directorio que representa la aplicación principal.
         - **main.go**: Archivo principal que inicia la aplicación.
@@ -47,6 +51,7 @@
 - **go.mod**: Archivo de definición de módulo Go.
 - **go.sum**: Archivo que contiene el checksum de las dependencias.
 
+<!-- TOC --><a name="mvc-modelo-vista-controlador"></a>
 ### MVC Modelo-Vista-Controlador
 ```go
 .
@@ -87,6 +92,7 @@
 - Los archivos estáticos (`static`) contienen recursos estáticos como archivos CSS, JavaScript e imágenes.
 - Las plantillas (`templates`) contienen archivos de plantillas HTML utilizados por las vistas para generar páginas HTML dinámicas.
 
+<!-- TOC --><a name="hexagonal-architecture"></a>
 ### Hexagonal Architecture
 ```go
 .
@@ -135,7 +141,8 @@ En esta estructura:
 - El directorio `cmd` contiene la entrada principal del programa, donde se inicializa la aplicación y se configuran los adaptadores.
 
 
-### Arquitectura de servicios
+<!-- TOC --><a name="services-architecture"></a>
+### Services Architecture
 ```go
 .
 ├── service1
@@ -184,7 +191,8 @@ En esta arquitectura:
 - Los servicios pueden ser escalados de forma independiente según las necesidades de la aplicación.
 - La arquitectura de microservicios permite una mayor modularidad, flexibilidad y capacidad de mantenimiento en comparación con las aplicaciones monolíticas.
 
-### Arquitectura de capas
+<!-- TOC --><a name="layers-architecture"></a>
+### Layers Architecture
 ```go
 .
 ├── cmd
@@ -213,7 +221,8 @@ La arquitectura de capas es un enfoque donde las diferentes capas de la aplicaci
     - **repositories**: Directorio que contiene la lógica de acceso a datos de la aplicación.
         - **repository.go**: Archivo que contiene la lógica de los repositorios para interactuar con la base de datos u otros sistemas de almacenamiento.
 
-### Arquitectura de Componentes
+<!-- TOC --><a name="components-architecture"></a>
+### Components Architecture 
 ```go
 .
 ├── components
@@ -241,3 +250,4 @@ La arquitectura de componentes es un enfoque donde la aplicación se construye a
 - **storage**: Directorio que contiene componentes relacionados con el almacenamiento de datos.
     - **storage.go**: Archivo que define la interfaz de almacenamiento.
     - **s3.go**: Archivo que contiene la implementación para almacenamiento en Amazon S3.
+    
