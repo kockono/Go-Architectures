@@ -13,21 +13,35 @@
 ### DDD Domain-Driven Design (Clean Architecture)
 ```go
 .
+.
 ├── cmd
 │   └── myapp
 │       └── main.go
 ├── internal
-│   ├── config
-│   │   └── config.go
-│   ├── handler
-│   │   └── handler.go
-│   ├── model
-│   │   └── model.go
-│   ├── repository
-│   │   └── repository.go
+│   ├── pedido                // Dominio: 
+│   │   ├── domain
+│   │   │   ├── pedido.go
+│   │   │   └── repository.go
+│   │   ├── application
+│   │   │   └── crear_pedido.go
+│   │   ├── infrastructure
+│   │   │   └── postgres_repository.go
+│   │   └── interfaces
+│   │       └── http_handler.go
+│   │
+│   ├── usuario              // Dominio: 
+│   │   ├── domain
+│   │   ├── application
+│   │   ├── infrastructure
+│   │   └── interfaces
+│   │
+│   ├── shared               // Código compartido
+│   │   ├── eventbus
+│   │   ├── database
+│   │   └── config
+│   │
 │   └── server
 │       └── server.go
-├── vendor
 ├── go.mod
 └── go.sum
 ```
